@@ -26,7 +26,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 5.5rem;
+    height: 5rem;
     background: rgba(0, 7, 27, 0.5);
     backdrop-filter: blur(3px);
     box-shadow: 0 3px 20px 2px black;
@@ -50,6 +50,10 @@ body {
     font-size: 1.rem;
     font-weight: bold;
     padding-left:0.8rem;
+}
+
+.logo__link--red {
+    color:var(--red-pink);
 }
 
 .nav {
@@ -183,7 +187,7 @@ body {
 /******Titres&Layout******/ 
 
 .main__title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: auto;
     margin-bottom:4rem;
     color:var(--violet-dark);
@@ -215,7 +219,7 @@ body {
     width:400px;
     height:400px;
     background: linear-gradient(to right,var(--violet-pink),var(--red-orange));
-    margin:2rem;
+    margin:2.5rem;
 }
 
 .about__image--photo {
@@ -228,12 +232,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:35%;
-    margin:2rem;
+    width:39%;
+    margin:2.5rem;
 }
 
 .article__subtitle {
     font-size: 1.4rem;
+    font-weight: 600;
     position:relative;
     width:fit-content;
     padding:1.5rem 0;
@@ -261,40 +266,119 @@ body {
     top: 50%;
 }
 
-.article__paragraph {
+.about__article p {
     text-align: left;
     padding:0.5rem 0;
+    line-height: 1.1;
+}
+
+.text__bold {
+    font-weight: 700;
 }
 
 
-/******Compétences******/ 
 
-.skills {
+/******Mon parcours******/ 
+
+.experience {
     background-color: var(--violet-dark);
     color:var(--white)
 }
 
-.skills__title {
+.experience__title {
     color: var(--white);
 }
 
-.skills__container {
+.experience__container {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
+/******Compétences******/ 
+
+
 /******Projets******/ 
 
-
-
-/******Contact******/ 
-
-.contact {
+.projects {
     background-color: var(--violet-dark);
     color:var(--white)
 }
 
-.contact_title {
+.projects__title {
     color: var(--white);
+}
+
+.projects__container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin:0 5rem;
+}
+
+.projects__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__article__container {
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    padding:2rem;
+}
+
+.projects__article__title {
+    font-size: 1.4rem;
+    position:relative;
+    width:fit-content;
+    padding:1.5rem 0;
+}
+
+.projects__article__title::before {
+    content: '';
+    height: 3px;
+    width: 50px;
+    background-color: var(--red-pink);
+    border-radius:5px;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+}
+
+.projects__article__title::after {
+    content: '';
+    height: 3px;
+    width: 50px;
+    background-color: var(--red-pink);
+    border-radius:5px;
+    position: absolute;
+    right: -60px;
+    top: 50%;
+}
+
+.projects__article__links a {
+    border: 1px solid var(--white);
+    border-radius:20px;
+    font-size: 0.8rem;
+    padding:0.6rem;
+}
+
+/******Contact******/ 
+
+
+
+/******FOOTER******/ 
+
+.footer {
+    height: 5rem;
+    background-image: url(../images/background-red-darkblue.jpg);
+    background-size: cover;
+    color:var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
