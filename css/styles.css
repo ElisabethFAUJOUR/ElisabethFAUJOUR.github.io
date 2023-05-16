@@ -1,0 +1,199 @@
+:root {
+    --blue-light:#503b8a;
+    --blue-dark: #000c2c;
+    --blue-light:#5fb1f1;
+    --violet-dark:#060026;
+    --red-orange:#fc5241;
+    --red-pink:#f42b65;
+    --red:#fa0151;
+    --white: white;
+    --gold:#ed9046;
+    --cyan:#1bf2ec;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color:var(--white);
+}
+
+.container {
+    height:100vh;
+    position: relative;
+}
+
+/******HEADER******/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px 8px black;
+}
+
+.logo {
+    margin:0 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo .bi {
+    font-size: 1.5rem;
+    color: var(--red);
+}
+
+.logo__link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-left:0.8rem;
+}
+
+.nav {
+    margin:0 5rem;
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+
+.nav__link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    padding: 0 1rem;
+    position:relative;
+}
+
+.nav__link::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right:0;
+    width: 80%;
+    height: 2px;
+    background-color: var(--red);
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.nav__link:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+
+
+/******MAIN******/ 
+
+/******Home******/ 
+
+.home {
+    height: 100vh;
+    background-image: url(../images/technology-black.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home__container {
+    margin:0 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    padding-right:4rem;
+}
+
+.content__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
+.title__name {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 0.6rem;
+}
+
+.title__job {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--pink);
+}
+
+.content__button {
+    margin:1.5rem 0;
+}
+
+.content__button {
+    border: none;
+    border-radius: 0.4rem;
+    background: linear-gradient(45deg, var(--red), var(--gold));
+    box-shadow: 0 6px 15px 2px black;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+    width: 50%;
+    transition: all .3s ease-in-out;
+}
+
+.content__button:hover {
+    transform: scale(1.05);
+}
+
+.content__button:not(:hover) {
+    transform: scale(1);
+}
+
+.social__link {
+    color:var(--white);
+    font-size: 1.6rem;
+    border: 1.6px solid var(--white);
+    border-radius: 50%;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.social-column .bi {
+    font-size: 2rem;
+}
+
+.social__link:hover {
+    color: var(--white);
+    background-color: var(--red);
+    border: 1.6px solid var(--red);
+    transition: all .3s ease-in-out;
+    }
+
+
+/******Presentation******/ 
+
+
+
+/******Compétences******/ 
+
+/******Projets******/ 
+
+/******Contact******/ 
