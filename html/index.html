@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Portfolio</title>
 </head>
@@ -23,11 +25,11 @@
                 <a class="logo__link" href="#">ElisabethF.</ElisabethF></a>
             </div>
             <nav class="nav">
-                    <a class="nav__link" href="#">Home</a> 
-                    <a class="nav__link" href="#">Présentation</a>
-                    <a class="nav__link" href="#">Compétences</a>
-                    <a class="nav__link" href="#">Projets</a>
-                    <a class="nav__link" href="#">Contact</a>
+                <a class="nav__link" href="#">Home</a>
+                <a class="nav__link" href="#">Présentation</a>
+                <a class="nav__link" href="#">Compétences</a>
+                <a class="nav__link" href="#">Projets</a>
+                <a class="nav__link" href="#">Contact</a>
             </nav>
         </header>
 
@@ -49,42 +51,45 @@
                         </div>
                     </div>
                 </div>
-                
             </section>
 
-            <section id="about" class="about">
-                <h2>Présentation</h2>
+            <section id="about" class="about main__layout">
+                <h2 class="about__title main__title">Présentation</h2>
                 <div class="about__container">
                     <div class="about__image">
-                        <img src="" alt="" width="100%">
+                        <img class="about__image--photo" src="../images/photo.png" alt="photo">
                     </div>
-                    <article class="about__container">
-                        <h3>Mon parcours</h3>
-                        <p></p>
-                        <h3>Mes qualités professionnelles</h3>
-                        <p></p>
-                    </article>
-                </div>
-            </section>
-
-            <section id="skills" class="skills">
-                <h2>Compétences</h2>
-                <div class="skills__container">
                     <article class="about__article">
-                        <div class="about__article__front">
+                        <h3 class="article__subtitle">Mon parcours</h3>
+                        <p class="article__paragraph">Après 7 années d'exercice en tant que Masseur-kinésithérapeute libéral, je ressens un besoin d'évolution professionnelle.</p>
+                        <p class="article__paragraph">Mon attrait pour les technologies et ma soif d'apprendre de nouvelles choses, m'ont alors rapproché du métier de développeur.</p>
+                        <p class="article__paragraph">J'ai pu, grâce à la formation intensive Fullstack JavaScript d'O'Clock (certifiée Grande École du Numérique) obtenir le Titre Professionnel Développeur Web et Web Mobile.</p> 
+                        <h3 class="article__subtitle">Mes qualités professionnelles</h3>
+                        <p class="article__paragraph">Mes expériences professionnelles dans le monde du libéral m'ont permis de développer mes capacités d'analyse, d'autonomie, de rigueur et du sens des responsabilités.</p>
+                        <p class="article__paragraph">Pour créer une alliance thérapeutique de confiance avec le patient, les capacités de communication et d'écoute active sont également essentielles.</p>
+                        <p class="article__paragraph">Consciencieuse et sensible au sens du détail, j'ai à cœur de produire des résultats toujours meilleurs.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="skills" class="skills main__layout">
+                <h2 class="skills__title main__title">Compétences</h2>
+                <div class="skills__container">
+                    <article class="skills__article">
+                        <div class="skills__article-front">
                         </div>
-                        <div class="about__article__back">
+                        <div class="skills__article-back">
                         </div>
-                        <div class="about__article__various">
+                        <div class="skills__article-various">
                         </div>
-                        <div class="about__article__logo">
+                        <div class="skills__article-logo">
                         </div>
                     </article>
                 </div>
             </section>
 
-            <section id="projects" class="projects">
-                <h2>Mes projets</h2>
+            <section id="projects" class="projects main__layout">
+                <h2 class="projects__title main__title">Mes projets</h2>
                 <div class="projects__container">
                     <article class="projects__item">
                         <h3></h3>
@@ -92,7 +97,7 @@
                         <p></p>
                         <div>
                             <a href="">Voir le projet</a>
-                            <a href="">Code source</a> 
+                            <a href="">Code source</a>
                         </div>
                     </article>
                     <article class="projects__item">
@@ -101,14 +106,14 @@
                         <p></p>
                         <div class="projects__buttons">
                             <a href="">Voir le projet</a>
-                            <a href="">Code source</a> 
+                            <a href="">Code source</a>
                         </div>
                     </article>
                 </div>
             </section>
 
-            <section id="contact" class="contact">
-                <h2>Me Contacter</h2>
+            <section id="contact" class="contact main__layout">
+                <h2 class="contact__title main__title">Me Contacter</h2>
                 <div class="contact__container">
                     <div class="contact__social">
                         <a href="#"><i class="bi bi-github"></i></a>
@@ -116,7 +121,7 @@
                         <a href="#"><i class="bi bi-linkedin"></i></a>
                         <a href="#"><i class="bi bi-facebook"></i></a>
                     </div>
-                    <div class="contact__form" >
+                    <div class="contact__form">
                         <form class="contact__form__container" action="" method="">
                             <input type="text" name="lastname" placeholder="Nom" id="lastname" required>
                             <input type="text" name="firstname" placeholder="Prénom" id="firstname" required>
@@ -124,9 +129,9 @@
                             <textarea name="message" placeholder="Ecrivez votre message" required></textarea>
                             <input type="submit" value="ENVOYER">
                         </form>
-                    </div> 
+                    </div>
                 </div>
-            </section>     
+            </section>
         </main>
 
         <footer>
