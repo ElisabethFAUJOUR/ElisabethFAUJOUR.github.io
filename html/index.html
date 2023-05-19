@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Elisabeth FAUJOUR, développeuse web et web mobile junior, diplomé de l'école O'Clock.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/responsive.css">
@@ -14,9 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/96798cecd4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script h></script>
     <title>Portfolio</title>
 </head>
 
@@ -31,7 +31,7 @@
             <nav class="nav">
                 <a class="nav__link" href="#">Home</a>
                 <a class="nav__link" href="#about">A propos</a>
-                <a class="nav__link" href="#experience">Mon parcours</a>
+                <a class="nav__link" href="#career">Mon parcours</a>
                 <a class="nav__link" href="#skills">Compétences</a>
                 <a class="nav__link" href="#projects">Projets</a>
                 <a class="nav__link" href="#contact">Contact</a>
@@ -41,18 +41,21 @@
         <main class="main">
             <section class="home" id="home">
                 <div class="home__container">
-                    <div class="home__social__column">
-                        <a class="home__social__link" href="https://github.com/ElisabethFAUJOUR"><i class="bi bi-github"></i></i></a>
-                        <a class="home__social__link" href="https://www.linkedin.com/in/elisabeth-faujour-134794256/"><i class="bi bi-linkedin"></i></a>
-                        <a class="home__social__link" href="#"><i class="bi bi-twitter"></i></a>
+                    <div class="home__social">
+                        <a class="home__social__link" href="https://github.com/ElisabethFAUJOUR"><i
+                                class="bi bi-github"></i></i></a>
+                        <a class="home__social__link" href="https://www.linkedin.com/in/elisabeth-faujour-134794256/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a class="home__social__link" href="mailto:efaujour@gmail.com"><i
+                                class="bi bi-envelope-fill"></i></a>
                     </div>
-                    <div class="content__column">
-                        <div class="content__title">
+                    <div class="home__titles">
+                        <div>
                             <h1 class="title__name">Elisabeth FAUJOUR</h1>
-                            <h2 class="title__job">Développeuse Web Junior - Javascript</h2>
+                            <h2 class="title__job">Développeuse Web Fullstack JS Junior</h2>
                         </div>
-                        <div class="content__button">
-                            <a class="title__cv" href="" download="">Télecharger mon CV</a>
+                        <div class="home__button">
+                            <a href="" download="">Télecharger mon CV</a>
                         </div>
                     </div>
                 </div>
@@ -62,32 +65,34 @@
                 <h2 class="about__title main__title">A PROPOS</h2>
                 <div class="about__container">
                     <div class="about__image">
-                        <img class="about__image--photo" src="../images/photo.png" alt="photo">
+                        <img class="profile-picture" src="../images/photo.png" alt="photo">
                     </div>
                     <article class="about__article">
-                        <h3 class="article__subtitle main__subtitle">De Kiné à Développeur</h3>
-                        <div class="article__content">
-                            <p>Après 7 années d'exercice en tant que Masseur-kinésithérapeute libéral, je ressens un besoin
-                                d'<span class="text__bold">évolution</span> professionnelle.</p>
+                        <h3 class="about__subtitle main__subtitle">De Kiné à Développeur</h3>
+                        <div class="about__text">
+                            <p>Après 7 années d'exercice en tant que Masseur-kinésithérapeute libéral, je ressens un
+                                besoin
+                                d'<span class="bold">évolution</span> professionnelle.</p>
                             <p>Mon attrait pour le numérique et ma soif d'apprendre de nouvelles choses m'ont alors
                                 rapproché du métier de développeur.</p>
                             <p>Grâce à la formation Développeur Fullstack JavaScript d'O'Clock, j'ai pu obtenir le Titre
-                                Professionnel <span class="text__bold">'Développeur Web et Web Mobile'</span>.</p>
-                            <p>Ces 6 mois intensifs m'ont permis de construire des bases solides et d'acquérir la bonne
-                                méthodologie pour
-                                continuer d'évoluer dans le métier.</p>
+                                Professionnel <span class="bold">'Développeur Web et Web Mobile'</span>.</p>
+                            <p>Ces 6 mois intensifs m'ont permis d'aquérir des bases solides en développement web.
+                                J'enrichi constamment mes connaissances afin de continuer d'évoluer dans le métier mais
+                                aussi de nourrir ma <span class="bold">curiosité</span>.</p>
                         </div>
-                        <h3 class="article__subtitle main__subtitle">Mes qualités professionnelles</h3>
-                        <div class="article__content">
+                        <h3 class="about__subtitle main__subtitle">Mes qualités professionnelles</h3>
+                        <div class="about__text">
                             <p>Mes expériences professionnelles dans le monde du libéral m'ont permis de développer mes
-                                capacités d'<span class="text__bold">analyse</span>, d'<span
-                                    class="text__bold">autonomie</span>, de <span class="text__bold">rigueur</span> et du
-                                <span class="text__bold">sens des responsabilités</span>.</p>
+                                capacités d'<span class="bold">analyse</span>, d'<span class="bold">autonomie</span>, de
+                                <span class="bold">rigueur</span> et du
+                                <span class="bold">sens des responsabilités</span>.
+                            </p>
                             <p>Pour créer une alliance thérapeutique de confiance avec le patient, les capacités de
-                                <span class="text__bold">communication</span> et d'<span class="text__bold">écoute
+                                <span class="bold">communication</span> et d'<span class="bold">écoute
                                     active</span> sont également essentielles.
                             </p>
-                            <p><span class="text__bold">Consciencieuse</span> et sensible au <span class="text__bold">sens
+                            <p><span class="bold">Consciencieuse</span> et sensible au <span class="bold">sens
                                     du détail</span>, j'ai à cœur de produire des résultats toujours
                                 meilleurs.</p>
                         </div>
@@ -95,12 +100,68 @@
                 </div>
             </section>
 
-            <section class="experience main__layout" id="experience">
-                <h2 class="experience__title main__title white">MON PARCOURS</h2>
-                <div class="experience__container">
-                    <div class="experience__image">
-                    </div>
-                    <article class="experience__article">
+            <section class="career main__layout" id="career">
+                <h2 class="career__title main__title white">MON PARCOURS</h2>
+                <div class="career__timeline">
+                    <article class="timeline__container">
+                        <div class="timeline_icon icon--left"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline_block">
+                            <h3 class="timeline__title">Titre RNCP Niveau 5 'Développeur Web et Web Mobile'
+                            </h3>
+                            <p class="timeline__text">Spécialisation et projet professionnel</p>
+                            <p class="timeline__location">Ecole O'Clock (certifiée grande école du
+                                numérique)</p>
+                            <p class="timeline__date"><i class="fa-solid fa-calendar-days"></i> Mai – Octobre 2023</p>
+                        </div>
+                    </article>
+                    <article class="timeline__container">
+                        <div class="timeline_icon icon--right"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="timeline_block">
+                            <h3 class="timeline__title">Masseur-kinésithérapeute libéral</h3>
+                            <p class="timeline__location">Remplaçante puis assistante-collaboratrice en cabinet de groupe.</p>
+                            <p class="timeline__date"><i class="fa-solid fa-calendar-days"></i> 2016 – 2023</p>
+                        </div>
+                    </article>
+                    <article class="timeline__container">
+                        <div class="timeline_icon icon--left"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline_block">
+                            <h3 class="timeline__title">Diplôme d'état de Masseur-kinésithérapeute</h3>
+                            <p class="timeline__location">Ecole de kinésithérapie du CHU de Grenoble</p>
+                            <p class="timeline__date"><i class="fa-solid fa-calendar-days"></i> 2013 – 2016</p>
+                        </div>
+                    </article>
+                    <article class="timeline__container">
+                        <div class="timeline_icon icon--right"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline_block">
+                            <h3 class="timeline__title">PACES (Première Année Commune Aux études de Santé)</h3>
+                            <p class="timeline__location">Université Grenobles Alpes - UFR Médecine</p>
+                            <p class="timeline__date"><i class="fa-solid fa-calendar-days"></i> 2011 – 2013</p>
+                        </div>
+                    </article>
+                    <article class="timeline__container">
+                        <div class="timeline_icon icon--left"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline_block">
+                            <h3 class="timeline__title">L1 Biologie</h3>
+                            <p class="timeline__location">Université Grenobles Alpes</p>
+                            <p class="timeline__date"><i class="fa-solid fa-calendar-days"></i> 2010 – 2011</p>
+                        </div>
+                    </article>
+                    <article class="timeline__container">
+                        <div class="timeline_icon icon--right"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline_block">
+                            <h3 class="timeline__title">L1 Sciences Fondamentales et Technologies</h3>
+                            <p class="timeline__location">Université Savoie Mont Blanc</p>
+                            <p class="timeline__date"><i class="fa-solid fa-calendar-days"></i> 2009 – 2010</p>
+                        </div>
+                    </article>
+                    <article class="timeline__container">
+                        <div class="timeline_icon icon--left"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline_block">
+                            <h3 class="timeline__title">Baccalauréat général série S Sciences et Vie de la
+                                Terre</h3>
+                            <p class="timeline__location">Lycée Paul Héroult - Saint Jean de Maurienne</p>
+                            <p class="timeline__date"><i class="fa-solid fa-calendar-days"></i> 2007 – 2009</p>
+                        </div>
                     </article>
                 </div>
             </section>
@@ -110,12 +171,15 @@
                 <div class="skills__container">
                     <article class="skills__article">
                         <div class="skills__article-front">
+                            <p>Front End : HTML, CSS, Bootstrap, Javascript</p>
                         </div>
                         <div class="skills__article-back">
+                            <p>Back End : PHP, programmation orientée objet, méthode MVC, SQL, APIs, framework Lumen</p>
                         </div>
-                        <div class="skills__article-various">
+                        <div class="skills__article-cms">
                         </div>
-                        <div class="skills__article-logo">
+                        <div class="skills__article-tools">
+                            <p>Outils : Git, Github, Trello, SCRUM et méthode Agile</p>
                         </div>
                     </article>
                 </div>
@@ -124,23 +188,23 @@
             <section class="projects main__layout" id="projects">
                 <h2 class="projects__title main__title white">PROJETS</h2>
                 <div class="projects__container">
-                    <article class="projects__article">
-                        <h3 class="projects__article__title main__subtitle">Premier Projet</h3>
-                        <div class="projects__article__container">
-                            <img class="projects__article__picture" src="" alt="">
-                            <p></p>
-                            <div class="projects__article__links">
+                    <article class="projects__card">
+                        <img class="card__picture" src="" alt="">
+                        <div class="card__body">
+                            <h3 class="card__title"> </h3>
+                            <p class="card__text"></p>
+                            <div class="card__button">
                                 <a href="">Voir le projet</a>
                                 <a href="">Code source</a>
                             </div>
                         </div>
                     </article>
-                    <article class="projects__article">
-                        <h3 class="projects__article__title main__subtitle">Deuxième Projet</h3>
-                        <div class="projects__article__container">
-                            <img class="projects__article__picture" src="" alt="">
-                            <p></p>
-                            <div class="projects__article__links">
+                    <article class="projects__card">
+                        <img class="card__picture" src="" alt="">
+                        <div class="card__body">
+                            <h3 class="card__title"> </h3>
+                            <p class="card__text"></p>
+                            <div class="card__button">
                                 <a href="">Voir le projet</a>
                                 <a href="">Code source</a>
                             </div>
@@ -166,7 +230,6 @@
                     <div class="form__button">
                         <input type="submit" value="Envoyer">
                     </div>
-                        
                 </form>
             </section>
 
@@ -174,9 +237,11 @@
 
         <footer class="footer">
             <div class="footer__social">
-                <a class="footer__social__link" href="https://github.com/ElisabethFAUJOUR"><i class="bi bi-github"></i></i></a>
-                <a class="footer__social__link" href="https://www.linkedin.com/in/elisabeth-faujour-134794256/"><i class="bi bi-linkedin"></i></a>
-                <a class="footer__social__link" href="#"><i class="bi bi-twitter"></i></a>
+                <a class="footer__social__link" href="https://github.com/ElisabethFAUJOUR"><i
+                        class="bi bi-github"></i></i></a>
+                <a class="footer__social__link" href="https://www.linkedin.com/in/elisabeth-faujour-134794256/"><i
+                        class="bi bi-linkedin"></i></a>
+                <a class="footer__social__link" href="mailto:efaujour@gmail.com"><i class="bi bi-envelope-fill"></i></a>
             </div>
             <p>© 2023 Elisabeth FAUJOUR - Tous droits réservés.</p>
         </footer>
