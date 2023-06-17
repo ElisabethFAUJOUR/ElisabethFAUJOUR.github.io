@@ -1,0 +1,178 @@
+@keyframes catPawAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes catPawUpAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+:root {
+    --violet-dark: #030714;
+    --violet-medium:#1a1534; 
+    --violet:#8e5ffc; 
+    --violet-light:#d0cfe2;
+    --violet-contact:#0F0D26;
+    --white: white;
+    --whitesmoke:#DBDCE1;
+    --shadow: black;
+    --stroke-width: 0.6;
+}
+
+path,
+rect {
+    stroke-width: var(--stroke-width);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-opacity: 1;
+}
+
+
+/***TABLE***/
+
+.table {
+    fill: none;
+    stroke: var(--violet);
+}
+
+/***LAPTOP***/
+
+
+.laptop-cover {
+    fill: none;
+    fill-opacity: 1;
+    stroke: #ffffff;
+}
+
+.laptop-base {
+    fill: none;
+    fill-opacity: 1;
+    stroke: #ffffff;
+}
+
+.keyboard {
+    fill: none;
+    fill-opacity: 1;
+    stroke: #ffffff;
+}
+
+.screen-content {
+    fill: var(--violet-dark);
+    fill-opacity: 1;
+    stroke: #ffffff;
+}
+
+/*Screen animation*/
+
+.screen-code {
+    fill: none;
+    fill-opacity: 1;
+    stroke: #ffffff;
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 100%;
+    opacity: 0; /* Masquer tous les paths par défaut */
+    transition: none; /* Supprimer la transition */
+}
+
+.screen-code.displayed {
+    opacity: 1; /* Afficher les paths avec la classe "displayed" */
+    stroke-dashoffset: 0; /* Afficher progressivement le trait */
+    transition: stroke-dashoffset 0.5s ease-in-out; /* Ajouter une transition */
+}
+
+
+/***CAT***/
+
+.cat-face {
+    display: inline;
+    fill: #ffffff;
+    fill-opacity: 1;
+    stroke-width: 0.396948;
+}
+
+.cat-tail {
+    fill: none;
+    fill-opacity: 1;
+    stroke: #ffffff;
+}
+
+.cat-body {
+    fill: none;
+    fill-opacity: 1;
+    stroke: #ffffff;
+}
+
+.cat-ears {
+    fill: none;
+    fill-opacity: 1;
+    stroke: #ffffff;
+}
+
+.cat-mustache {
+    fill: none;
+    fill-opacity: 1;
+    stroke: #ffffff;
+}
+
+.cat-paw-right {
+    fill: var(--violet-dark);
+    fill-opacity: 1;
+    stroke: #ffffff;
+    stroke-opacity: 1;
+}
+
+.cat-paw-right-up {
+    fill: var(--violet-dark);
+    fill-opacity: 1;
+    stroke: #ffffff;
+    stroke-opacity: 1;
+}
+
+.cat-paw-left {
+    fill: var(--violet-dark);
+    fill-opacity: 1;
+    stroke: #ffffff;
+    stroke-opacity: 1;
+}
+
+.cat-paw-left-up {
+    fill: var(--violet-dark);
+    fill-opacity: 1;
+    stroke: #ffffff;
+    stroke-opacity: 1;
+}
+
+/*Paw animation*/
+
+.cat-paw-right {
+    animation: catPawAnimation 0.4s infinite;
+}
+
+.cat-paw-left {
+    animation: catPawAnimation 0.4s infinite;
+    animation-delay: 0.1s;
+}
+
+.cat-paw-right-up {
+    animation: catPawUpAnimation 0.4s infinite;
+}
+
+.cat-paw-left-up {
+    animation: catPawUpAnimation 0.4s infinite;
+    animation-delay: 0.1s;
+}
