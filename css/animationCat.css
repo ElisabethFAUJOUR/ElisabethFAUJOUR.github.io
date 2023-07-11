@@ -22,16 +22,15 @@
     }
 }
 
-:root {
-    --violet-dark: #030714;
-    --violet-medium:#1a1534; 
-    --violet:#8e5ffc; 
-    --violet-light:#d0cfe2;
-    --violet-contact:#0F0D26;
-    --white: white;
-    --whitesmoke:#DBDCE1;
-    --shadow: black;
-    --stroke-width: 0.6;
+.home__catSVG {
+    --blue:#748be8;
+    --violet:#5e28dc;
+    --pink-light:#d89fed;
+    --pink:#663e8a;
+    --violet-light:#d0cfe2; 
+    --stroke-width:0.5;
+
+
 }
 
 path,
@@ -47,7 +46,7 @@ rect {
 
 .table {
     fill: none;
-    stroke: var(--violet);
+    stroke: var(--violet-light);
 }
 
 /***LAPTOP***/
@@ -56,25 +55,25 @@ rect {
 .laptop-cover {
     fill: none;
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--violet);
 }
 
 .laptop-base {
     fill: none;
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--violet);
 }
 
 .keyboard {
     fill: none;
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--blue);
 }
 
 .screen-content {
     fill: var(--violet-dark);
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--blue);
 }
 
 /*Screen animation*/
@@ -82,79 +81,84 @@ rect {
 .screen-code {
     fill: none;
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--violet-light);
+    stroke-width: 1;
     stroke-dasharray: 100%;
     stroke-dashoffset: 100%;
-    opacity: 0; /* Masquer tous les paths par défaut */
-    transition: none; /* Supprimer la transition */
+    opacity: 0; 
+    transition: none; 
 }
 
 .screen-code.displayed {
-    opacity: 1; /* Afficher les paths avec la classe "displayed" */
-    stroke-dashoffset: 0; /* Afficher progressivement le trait */
-    transition: stroke-dashoffset 0.5s ease-in-out; /* Ajouter une transition */
+    opacity: 1; 
+    stroke-dashoffset: 0; 
+    transition: stroke-dashoffset 0.5s ease-in-out;
 }
 
 
 /***CAT***/
 
 .cat-face {
-    display: inline;
-    fill: #ffffff;
+    display:inline;
+    fill: var(--pink-light);
     fill-opacity: 1;
-    stroke-width: 0.396948;
+    stroke-width:0.396948;
 }
 
 .cat-tail {
     fill: none;
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--violet-light);
 }
 
 .cat-body {
     fill: none;
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--violet-light);
 }
 
 .cat-ears {
     fill: none;
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--pink);
 }
 
 .cat-mustache {
     fill: none;
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--pink);
 }
 
 .cat-paw-right {
     fill: var(--violet-dark);
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--violet-light);
     stroke-opacity: 1;
 }
 
 .cat-paw-right-up {
     fill: var(--violet-dark);
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--violet-light);
     stroke-opacity: 1;
 }
 
 .cat-paw-left {
     fill: var(--violet-dark);
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke: var(--violet-light);
     stroke-opacity: 1;
 }
 
 .cat-paw-left-up {
     fill: var(--violet-dark);
     fill-opacity: 1;
-    stroke: #ffffff;
+    stroke:var(--violet-light);
     stroke-opacity: 1;
+}
+
+.pad {
+    stroke:var(--pink);
 }
 
 /*Paw animation*/
