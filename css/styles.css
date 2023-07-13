@@ -8,6 +8,7 @@
     --white: white;
     --whitesmoke:#DBDCE1;
     --shadow: black;
+    --blue:#748be8;
 }
 
 
@@ -384,7 +385,7 @@ body {
 }
 
 .timeline__date {
-    color:var(--violet);
+    color:var(--blue);
     font-weight: 500;
 }
 
